@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:ubelaw_client/client/authentications/registration2.dart';
 import '../../utilities/size_config.dart';
 import '../../widgets/defaultButton.dart';
 import '../../widgets/edittexts.dart';
+import '../main_screen.dart';
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({Key? key}) : super(key: key);
 
@@ -70,7 +70,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       SizedBox(height: getProportionateScreenHeight(10)),
 
                       SizedBox(height: getProportionateScreenHeight(20)),
-                      defaultButton(true,"Next",(){ Navigator.push(context, MaterialPageRoute(builder: (c)=>Registration2()));}),
+                      defaultButton(true,"Next",(){ Navigator.push(context, MaterialPageRoute(builder: (c)=>MainScreen()));}),
 
                       SizedBox(height: getProportionateScreenHeight(40)),
                     ],
